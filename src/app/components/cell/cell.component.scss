@@ -1,0 +1,84 @@
+$border-width: 5px;
+$border-color: white;
+
+.square {
+  width: 125px;
+  height: 125px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+
+  &.t-l {
+    border-right: $border-width solid $border-color;
+    border-bottom: $border-width solid $border-color;
+  }
+  &.t-c {
+    border-bottom: $border-width solid $border-color;
+  }
+  &.t-r {
+    border-left: $border-width solid $border-color;
+    border-bottom: $border-width solid $border-color;
+  }
+
+  &.m-l {
+    border-right: $border-width solid $border-color;
+  }
+  &.m-r {
+    border-left: $border-width solid $border-color;
+  }
+
+  &.b-l {
+    border-right: $border-width solid $border-color;
+    border-top: $border-width solid $border-color;
+  }
+  &.b-c {
+    border-top: $border-width solid $border-color;
+  }
+  &.b-r {
+    border-top: $border-width solid $border-color;
+    border-left: $border-width solid $border-color;
+  }
+
+  .x, .o {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    animation: appear .2s cubic-bezier(0.5, 1.8, 0.1, 1.1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .x::before, .x::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  .x::before {
+    transform: rotate(-45deg);
+  }
+  .x::after {
+    transform: rotate(45deg);
+  }
+
+  .o::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 10px solid $border-color;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}

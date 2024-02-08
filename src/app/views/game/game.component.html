@@ -1,0 +1,10 @@
+<div class="game">
+  <div class="container">
+    <div class="content">
+      <h2>TIC-TAC-TOE</h2>
+      <app-board-component #board (endGameEvent)="endGameChangeScores($event)"></app-board-component>
+      <app-scores-component [scores]="scores"></app-scores-component>
+    </div>
+  </div>
+  <app-popup-component [result]="gameResult" (closedPopupEvent)="closePopupAndStartNewGame()" *ngIf="isPopupVisible"></app-popup-component>
+</div>

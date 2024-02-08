@@ -1,0 +1,40 @@
+.game {
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: #0e1111;
+  position: relative;
+
+  .container {
+    height: 100%;
+
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 60px;
+
+      h2 {
+        text-align: center;
+        width: 300px;
+        font-family: Eczar, sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 32px;
+        //border-bottom: 2px solid white;
+      }
+
+
+
+    }
+  }
+
+  app-popup-component {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

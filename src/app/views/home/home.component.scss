@@ -1,0 +1,54 @@
+.home {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: #0e1111;
+
+  .container {
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-family: Eczar, sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 52px;
+        margin-bottom: 150px;
+      }
+
+      .button {
+        width: 230px;
+        height: 50px;
+        border-radius: 10px;
+        border: 5px solid black;
+        transition: all .1s ease-in-out;
+
+        button {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          box-sizing: border-box;
+          border-radius: 7px;
+          outline: none;
+          border: 3px solid white;
+          background-color: #76ecf2;
+          color: black;
+          font-family: Eczar, sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+        }
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        &:active {
+          scale: 1;
+        }
+      }
+    }
+  }
+}

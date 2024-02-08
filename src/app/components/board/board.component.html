@@ -1,0 +1,21 @@
+<div class="board">
+  <ng-container *ngFor="let row of board; index as i">
+    <ng-container *ngFor="let cell of row; index as j">
+      <app-cell-component (cellClickEvent)="cellClickHandler($event, i, j)" [cell]="cell"></app-cell-component>
+    </ng-container>
+  </ng-container>
+
+<!--  <div class="square t-l">-->
+<!--    <div class="x"></div>-->
+<!--  </div>-->
+<!--  <div class="square t-c"></div>-->
+<!--  <div class="square t-r">-->
+<!--    <div class="o"></div>-->
+<!--  </div>-->
+<!--  <div class="square m-l"></div>-->
+<!--  <div class="square m-c"></div>-->
+<!--  <div class="square m-r"></div>-->
+<!--  <div class="square b-l"></div>-->
+<!--  <div class="square b-c"></div>-->
+<!--  <div class="square b-r"></div>-->
+</div>

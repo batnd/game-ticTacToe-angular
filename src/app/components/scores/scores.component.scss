@@ -1,0 +1,24 @@
+.scores {
+  display: flex;
+  column-gap: 55px;
+
+  .score-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .score-title {
+      color: white;
+      font-family: Eczar, sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    .score-result {
+      color: white;
+      font-family: Eczar, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+}

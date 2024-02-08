@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Eczar';
+  font-weight: 500;
+  src: url("./assets/fonts/Eczar-Medium.ttf");
+}
+@font-face {
+  font-family: 'Eczar';
+  font-weight: 700;
+  src: url("./assets/fonts/Eczar-Bold.ttf");
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+
+  body {
+    height: 100%;
+
+    app-root {
+      height: 100%;
+    }
+  }
+}
+
+app-home-component, app-game-component {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
